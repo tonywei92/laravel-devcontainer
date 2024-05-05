@@ -19,6 +19,18 @@ To get started with the provided DevContainer configuration, follow these steps:
 
 This process will create and start a Docker container based on the configuration specified in the `.devcontainer` folder. Once the container is running, your project will be reopened inside the container, providing an isolated development environment.
 
+## Included Node.js
+In addition to the PHP extensions, the DevContainer configuration also includes Node.js. This is essential for Laravel development as it enables you to use tools like npm and Laravel Mix for frontend asset compilation.
+
+Node.js version: latest LTS
+
+To use Node.js in your Laravel project, you can run commands like `npm install` or `npm run dev` directly inside the DevContainer.
+
+Please note that the specific version of Node.js included in the DevContainer may vary. You can check the exact version by looking at the `.devcontainer/devcontainer.json` file in your Laravel project.
+
+If you need to use a different version of Node.js, you can update the `.devcontainer/devcontainer.json` file and specify the desired version in the features section and follow [the official guide](https://github.com/devcontainers/features/tree/main/src/node).
+
+After making any changes to the DevContainer configuration, remember to rebuild the container to apply the changes.
 ## Included PHP Extensions
 
 The DevContainer configuration includes the following PHP extensions, essential for Laravel development:
