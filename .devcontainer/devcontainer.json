@@ -12,7 +12,11 @@
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
-      "extensions": ["DEVSENSE.phptools-vscode", "open-southeners.laravel-pint"]
+      "extensions": [
+        "DEVSENSE.phptools-vscode",
+        "open-southeners.laravel-pint",
+        "esbenp.prettier-vscode"
+      ]
     }
   },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
